@@ -1,0 +1,21 @@
+---
+title: "Session 2"
+author: "Arsh"
+date: "1/17/2022"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+```
+
+## Read survey 1
+
+Here we are going to read an Excel file 
+
+```{r}
+survey1 <- readxl::read_excel("~/shared/survey1.xlsx")
+kable(survey1)
+```
+
